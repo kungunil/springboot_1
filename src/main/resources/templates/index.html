@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+    <link rel="stylesheet" type="text/css"  href="/semantic.min.css">
+    <script type="text/javascript" src="/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="/semantic.min.js"></script>
+</head>
+<body>
+5555555555555555555555555555
+<form action="/user" method="post">
+    <input type="hidden" name="_method" value="delete">
+</form>
+<a href="/atguigu">点击</a>
+<br>
+<hr>
+<form role="form" th:action="@{/upload}" method="post" enctype="multipart/form-data">
+    <div>
+        头像:<input type="file" name="headerImg">
+    </div>
+    <div>
+        生活照:<input type="file" name="photos" multiple>
+    </div>
+    <input type="submit">
+</form>
+
+
+<div class="ui button">
+    Default
+</div>
+
+<div class="ui menu">
+    <div class="item">
+        Item A
+    </div>
+    <div class="item">
+        Item B
+    </div>
+    <div class="item">
+        Item C
+    </div>
+</div>
+</body>
+</html>
